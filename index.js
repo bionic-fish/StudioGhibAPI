@@ -42,7 +42,6 @@ request.onload = function() {
             card.appendChild(p);
 
             // log each movie title
-
             console.log(movie.title)
         })
     } else {

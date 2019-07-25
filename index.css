@@ -1,30 +1,23 @@
+/* api elements */
 #root {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Handlee', cursive;
-  }
-  i {
-    font-size: 65px;
-    padding: 11px;
-    
-  
-}
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-  }
-  .header {
-    margin: 2%;
-    padding: 25px;
-}
-.card {
-  background: rgb(188,23,230);
-  background: linear-gradient(195deg, rgba(188,23,230,1) 31%, rgba(70,170,252,1) 100%); 
-  border-radius: 10px;
-  padding: 2%;
+  font-family: 'Handlee', cursive;  
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
+/* class props */
+.header {
+  margin: 2%;
+  padding: 25px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
+}
+
+/* global props */
 h1 {
   color: #fff;
   padding: 30px;
@@ -32,11 +25,17 @@ h1 {
   
 }
 
+i {
+  font-size: 65px;
+  padding: 11px;
+}
+
 p {
   color: #fff;
   padding: 10px;
 }
 
+/* media queries */
 @media screen and (min-width: 600px) {
   .card {
     flex: 1 1 calc(50% - 2rem);
@@ -48,7 +47,13 @@ p {
     flex: 1 1 calc(33% - 2rem);
   }
 }
-
+/* card backgrounds */
+.card {
+  background: rgb(188,23,230);
+  background: linear-gradient(195deg, rgba(188,23,230,1) 31%, rgba(70,170,252,1) 100%); 
+  border-radius: 10px;
+  padding: 2%;
+}
 .card:nth-child(2n) {
   background: rgb(23,208,230);
   background: linear-gradient(111deg, rgba(23,208,230,1) 31%, rgba(147,252,70,1) 86%); 
